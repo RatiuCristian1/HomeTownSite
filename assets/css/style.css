@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: 'Happy Monkey', sans-serif;
 }
 
 .container {
@@ -10,10 +11,215 @@ body {
   height: 100vh;
 }
 
-.section {
-  flex: 1;
+/* .section-header {
+} */
+
+.section1 {
   display: flex;
+  padding-bottom: 250px;
+  flex-direction: column;
+  flex: 1;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+}
+
+.section2 {
+  /* display: flex; */
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  background: #F1FAEE;
+}
+
+.section3 {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  background-image: url('/assets/images/Hannover1.jpg');
+  background-size: cover;;
+}
+
+.header-home {
+  background: #00896F;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  margin-top: 60px;
+  
+}
+
+.header-home::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 3px;
+  width: 100%;
+  background-color: #fa6b6b;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.header-home:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+.header-text {
+  background: #845EC2;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: 'Exo', sans-serif;
+  text-shadow: 0 0 5px black;
+}
+
+/*................................................................. Images */
+
+img {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  padding: 40px 200px;
+
+}
+
+.content-title {
+  display: inline;
+  color: rgb(249, 250, 250);
+  padding-top: 15px;
+  background: #21f3cd;
+  padding: 5px 10px;
+  font-size: 24px;
+  border-radius: 5px;
+  text-shadow: 0 0 2px #000201;
+}
+
+.hero-images {
+  display: flex;
+  padding: 0;
+}
+
+.hall:hover, .garden:hover, .church:hover {
+  width: 250px;
+  height: 250px;
+}
+
+.hero-text {
+  padding-bottom: 15px;
+}
+
+p {
+  font-weight: bold;
+  text-shadow: 0 0 1px #21f3cd;
+}
+
+h3 {
+  color: #0a856e;
+  text-shadow: 0 0 1px black;
+}
+
+
+.guide {
+  background: #00896F;
+  width: 800px;
+  margin: 0px auto;
+
+}
+
+.footer-guide {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.footer-img {
+  position: relative;
+  padding: 10px 70px 30px;
+
+}
+
+.footer-text {
+  color: white;
+  font-size: 30px;
+}
+
+.footer-title {
+  background: #e6d9db;
+  display: inline;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #0a856e;
+  text-shadow: 0 0 1px black;
+}
+
+@media screen and (max-width: 600px) {
+
+  .section1 {
+    width: 600px;
+  }
+
+  .img {
+    margin: 0;
+  }
+  .content-title {
+    color: #000201;
+    display: flex;
+    width: 200px;
+    position: relative;
+    bottom: 50px;
+    left: 90px;
+  }
+
+  .church, .hall {
+    display: none;
+  }
+
+  .garden {
+    position: relative;
+    right: 110px;
+    bottom: 50px;
+    margin: 0;
+  }
+
+  .section2 {
+    height: 700px;
+    width: 600px;
+  }
+
+  .hero-text, .para{
+    display: none;
+  }
+
+  .hero-text1 {
+    font-size: 17px;
+    width: 300px;
+    position: relative;
+    bottom: 60px;
+    left: 50px;
+  }
+
+  .section3 {
+    width: 600px;
+    margin: 0;
+  }
+
+  .footer-img {
+    display: none;
+  }
+
+  .garden-img {
+    width: 00px;
+  }
 }
