@@ -167,7 +167,7 @@ h3 {
 @media screen and (max-width: 600px) {
 
   .section1 {
-    width: 600px;
+    width: 100%;
   }
 
   .img {
@@ -195,7 +195,7 @@ h3 {
 
   .section2 {
     height: 700px;
-    width: 600px;
+    width: 100%;
   }
 
   .hero-text, .para{
@@ -211,7 +211,7 @@ h3 {
   }
 
   .section3 {
-    width: 600px;
+    width: 100%;
     margin: 0;
   }
 
